@@ -1,0 +1,206 @@
+.enable-all-font-uploads-container {
+    background-color: #ffffff;
+    min-height: calc(100vh - 32px);
+    padding: 20px;
+}
+
+.enable-all-font-uploads-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.enable-all-font-uploads-title {
+    font-size: 32px;
+    color: #00aaff;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-align: left;
+    border-bottom: 2px solid #00aaff;
+    padding-bottom: 10px;
+}
+
+.enable-all-font-uploads-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.enable-all-font-uploads-control-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.enable-all-font-uploads-toggle {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    flex-shrink: 0;
+}
+
+.enable-all-font-uploads-toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.enable-all-font-uploads-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ff6666;
+    border: 1px solid #ffffff;
+    border-radius: 34px;
+    transition: .4s;
+}
+
+.enable-all-font-uploads-slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 3px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+.enable-all-font-uploads-toggle input:checked + .enable-all-font-uploads-slider {
+    background-color: #66ff66;
+}
+
+.enable-all-font-uploads-toggle input:checked + .enable-all-font-uploads-slider:before {
+    transform: translateX(26px);
+}
+
+.enable-all-font-uploads-control-label {
+    font-size: 16px;
+    color: #1a1a1a;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.enable-all-font-uploads-warning {
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-left: 4px solid #00aaff;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.enable-all-font-uploads-warning p {
+    font-size: 16px;
+    color: #1a1a1a;
+    margin: 0;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+.enable-all-font-uploads-form .button {
+    font-size: 16px !important;
+    color: #00aaff !important;
+    background-color: #ffffff !important;
+    border: 1px solid #00aaff !important;
+    padding: 12px 30px !important;
+    border-radius: 4px !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    align-self: flex-start !important;
+    min-width: 150px !important;
+    height: auto !important;
+    line-height: 1.4 !important;
+    text-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.enable-all-font-uploads-form .button:hover {
+    background-color: #00aaff !important;
+    color: #ffffff !important;
+    border-color: #00aaff !important;
+}
+
+.enable-all-font-uploads-form .button:focus {
+    outline: none !important;
+    box-shadow: 0 0 0 2px rgba(0, 170, 255, 0.2) !important;
+}
+
+.enable-all-font-uploads-status {
+    padding: 15px;
+    background-color: #e8f5e8;
+    border: 1px solid #c8e6c9;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+.enable-all-font-uploads-status p {
+    margin: 0;
+    font-size: 14px;
+    color: #1a1a1a;
+}
+
+.enable-all-font-uploads-status.enabled {
+    background-color: #e8f5e8;
+    border-color: #c8e6c9;
+}
+
+.enable-all-font-uploads-status.disabled {
+    background-color: #ffebee;
+    border-color: #ffcdd2;
+}
+
+@media (max-width: 768px) {
+    .enable-all-font-uploads-container {
+        padding: 10px;
+    }
+    
+    .enable-all-font-uploads-content {
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    .enable-all-font-uploads-title {
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    .enable-all-font-uploads-control-group {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .enable-all-font-uploads-control-label {
+        text-align: left;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .enable-all-font-uploads-title {
+        font-size: 24px;
+    }
+    
+    .enable-all-font-uploads-control-label {
+        font-size: 14px;
+    }
+    
+    .enable-all-font-uploads-warning p {
+        font-size: 14px;
+    }
+}
